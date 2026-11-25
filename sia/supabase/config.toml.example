@@ -1,0 +1,10 @@
+# Optional. The two PUBLIC widget functions must be deployed WITHOUT JWT verification, because website
+# visitors have no INSIA login. You can either pass --no-verify-jwt when deploying, or keep this in config.toml.
+[functions.chatbot-process]
+verify_jwt = true
+
+[functions.widget-config]
+verify_jwt = false
+
+[functions.widget-chat]
+verify_jwt = false
